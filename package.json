@@ -4,6 +4,7 @@
 	"description": "ractivejs multi window/dialog component",
 	"main": "dist/ractive-window.min.js",
 	"scripts": {
+		"start": "webpack -w --config webpack.prod.js",
 		"build": "webpack --config webpack.prod.js"
 	},
 	"repository": {

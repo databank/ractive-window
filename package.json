@@ -4,6 +4,7 @@
 	"description": "ractivejs multi window/dialog component",
 	"main": "dist/ractive-window.min.js",
 	"scripts": {
+		"dev": "docker run -it --rm -v $PWD:/usr/share/nginx/html -p 8888:80 nginx",
 		"start": "webpack -w --config webpack.prod.js",
 		"build": "webpack --config webpack.prod.js"
 	},

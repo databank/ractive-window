@@ -32,7 +32,7 @@
 
 
 			function openwindow() {
-				ractive.findComponent('WindowHost').newWindow(function($window) {
+				ractive.findComponent('WindowContainer').newWindow(function($window) {
 					$window.set({
 						title: 'Print',
 						'geometry.width': 800,

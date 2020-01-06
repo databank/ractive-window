@@ -16,6 +16,8 @@
 	</style>
 	<body >
 		<button onclick="openwindow()">Open Window</button>
+		<button onclick="prompt()">Prompt</button>
+		<button onclick="confirm()">Confirm</button>
 		<div id="target"></div>
 		<script>
 			var ractive;
@@ -40,6 +42,56 @@
 						'geometry.left': 10,
 						'geometry.top': 10,
 					});
+
+
+					var vid = "window"+(Math.random()*0xFFFFFF<<0).toString(16)
+					$window.content('<div id="' + vid + '"/>').then(function() {
+						var ractive = new Ractive({
+							el: vid,
+							template: 'I am another component inside',
+							data: {
+								window: $window,
+							}
+						})
+					})
+
+
+				})
+			}
+
+			function prompt() {
+				ractive.findComponent('WindowContainer').newWindow(function($window) {
+					$window.set({
+						title: 'Test Prompt',
+						'geometry.width': 800,
+						'geometry.height': 600,
+						'geometry.left': 10,
+						'geometry.top': 10,
+					});
+
+
+					$window.prompt('Are you sure you want to blabla ?', function( msg ) {
+						alert( "Window said: " + msg )
+						$window.close()
+					})
+				})
+			}
+
+			function confirm() {
+				ractive.findComponent('WindowContainer').newWindow(function($window) {
+					$window.set({
+						title: 'Test Confirm',
+						'geometry.width': 800,
+						'geometry.height': 600,
+						'geometry.left': 10,
+						'geometry.top': 10,
+					});
+
+
+					$window.confirm('Are you sure you want to blabla ?', function( ) {
+						alert( "All your data has neen erased. Thanks for confirming!" )
+						$window.close()
+					})
 				})
 			}
 

@@ -14,12 +14,12 @@
 		body {background-color: #868686;}
 		#target {position: absolute; top: 50px;left: 50px;right: 50px;bottom: 50px;border: 1px solid #443d3d;box-shadow: 0 0 20px rgba(0,0,0,.4);background-color: #dfdfdf}
 	</style>
-	<body>
+	<body >
 		<button onclick="openwindow()">Open Window</button>
 		<div id="target"></div>
 		<script>
 			var ractive;
-			function onload() {
+
 
 				ractive = new Ractive({
 					target: 'target',
@@ -34,7 +34,6 @@
 					},
 				})
 
-			}
 
 			function openwindow() {
 				ractive.findComponent('WindowHost').newWindow(function($window) {

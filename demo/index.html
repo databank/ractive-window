@@ -10,9 +10,12 @@
 		<script src="../dist/ractive-window.min.js"></script>
 
 	</head>
-
+	<style>
+		body {background-color: #868686;}
+		#target {position: absolute; top: 50px;left: 50px;right: 50px;bottom: 50px;border: 1px solid #443d3d;box-shadow: 0 0 20px rgba(0,0,0,.4);background-color: #dfdfdf}
+	</style>
 	<body>
-		<div id="target" style="position: absolute; top: 50px;left: 50px;right: 50px;bottom: 50px;border: 1px solid #666;box-shadow: 0 0 10 rgba(0,0,0,.3)"></div>
+		<div id="target" style=""></div>
 		<script>
 			var ractive;
 			function onload() {

@@ -104,4 +104,4 @@
 
 
 
-.ractive-window .rw-controls button {margin: 0px 2px;width: 30px;height: 30px;vertical-align: middle;}
+.ractive-window .rw-controls button {margin: 0px 2px;width: 30px;height: 30px;vertical-align: middle;outline: none;}

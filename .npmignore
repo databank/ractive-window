@@ -2,3 +2,6 @@ node_modules/
 demo/
 src/
 .nvmrc
+.babelrc
+package-lock.json
+webpack.prod.js

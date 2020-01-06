@@ -23,14 +23,10 @@
 
 				ractive = new Ractive({
 					target: 'target',
-					template: '\
-						hello\
-						<WindowHost /> \
-						\
-					',
+					template: '<WindowContainer />',
 					components: {
-						Window: RactiveWindow.default.Window,
-						WindowHost: RactiveWindow.default.WindowHost,
+						Window: RactiveWindow.Window,
+						WindowContainer: RactiveWindow.Container,
 					},
 				})
 

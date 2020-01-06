@@ -11,13 +11,35 @@
 
 	</head>
 	<style>
-		body {background-color: #868686;}
+		body {background-color: #868686;font-family: sans-serif;}
+		.top-buttons {position: absolute;top: -30px;left: 0px;}
 		#target {position: absolute; top: 50px;left: 50px;right: 50px;bottom: 50px;border: 1px solid #443d3d;box-shadow: 0 0 20px rgba(0,0,0,.4);background-color: #dfdfdf}
 	</style>
+
+
+	<script id="mytemplate" type="text/ractive">
+
+		<div class="top-buttons">
+			<button onclick="openwindow()">Open Window</button>
+			<button onclick="prompt()">Prompt</button>
+			<button onclick="confirm()">Confirm</button>
+			<select value={{theme}} >
+				<option value="windows">Windows Theme</option>
+				<option value="mac-dark">Mac Dark</option>
+				<option value="mac-light">Mac Light</option>
+				<option value="atom">Atom Editor</option>
+			</select>
+		</div>
+
+
+		<WindowContainer theme={{theme}} />
+	</script>
+
 	<body >
-		<button onclick="openwindow()">Open Window</button>
-		<button onclick="prompt()">Prompt</button>
-		<button onclick="confirm()">Confirm</button>
+
+
+
+
 		<div id="target"></div>
 		<script>
 			var ractive;
@@ -25,11 +47,14 @@
 
 				ractive = new Ractive({
 					target: 'target',
-					template: '<WindowContainer />',
+					template: '#mytemplate',
 					components: {
 						Window: RactiveWindow.Window,
 						WindowContainer: RactiveWindow.Container,
 					},
+					data: function() {
+						return { theme: 'windows',}
+					}
 				})
 
 
@@ -49,9 +74,7 @@
 						var ractive = new Ractive({
 							el: vid,
 							template: 'I am another component inside',
-							data: {
-								window: $window,
-							}
+							//data: function() {return {window: $window,}}
 						})
 					})
 

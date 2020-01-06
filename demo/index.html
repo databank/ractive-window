@@ -12,13 +12,13 @@
 	</head>
 
 	<body>
-
+		<div id="target" style="position: absolute; top: 50px;left: 50px;right: 50px;bottom: 50px;border: 1px solid #666;box-shadow: 0 0 10 rgba(0,0,0,.3)"></div>
 		<script>
 			var ractive;
 			function onload() {
 
 				ractive = new Ractive({
-					el: 'body',
+					el: '#target',
 					template: '\
 						<WindowHost /> \
 						<button onclick="openwindow()">Open Window</button>\

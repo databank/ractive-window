@@ -1,0 +1,250 @@
+.ractive-window.theme-windows {
+  background-color: #d4d0c8;
+  box-shadow: -1px -1px 1px #92babc, 1px 1px 1px #3f8080;
+  border-radius: 0px;
+  border-top: 1px solid #dee2e4;
+  border-right: 1px solid #38494b;
+  border-bottom: 1px solid #38494b;
+  border-left: 1px solid #dee2e4;
+}
+.ractive-window.theme-windows .rw-interior > .rw-title {
+  background-color: #9e9e9e;
+}
+.ractive-window.theme-windows .rw-interior > .rw-title {
+  margin: 1px 1px 0px 1px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-title {
+  height: 28px;
+  line-height: 28px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-controls {
+  right: 1px;
+  top: 1px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-controls {
+  margin: 2px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-controls button {
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+  border-left: 1px solid #ffffff;
+}
+.ractive-window.theme-windows .rw-interior > .rw-controls button {
+  box-shadow: inset -1px -1px 1px #808080;
+  background-color: #d4d0c8;
+}
+.ractive-window.theme-windows .rw-interior > .rw-controls button {
+  width: 24px;
+  height: 24px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-controls button {
+  margin-left: 1px;
+  padding: 4px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-body {
+  background-color: #d4d0c8;
+}
+.ractive-window.theme-windows .rw-interior > .rw-body {
+  top: 30px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-body {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-body {
+  color: #666;
+}
+.ractive-window.theme-windows .rw-interior > .rw-dialog {
+  background-color: #d4d0c8;
+}
+.ractive-window.theme-windows .rw-interior > .rw-dialog-cover {
+  background-color: #d4d0c8;
+}
+.ractive-window.theme-windows.active {
+  background-color: #d4d0c8;
+}
+.ractive-window.theme-windows.active .rw-interior > .rw-title {
+  background-color: #00a;
+}
+.ractive-window.theme-windows.active .rw-interior > .rw-body {
+  background-color: #d4d0c8;
+}
+.rw-interior > .rw-title {
+  color: #fff;
+}
+.ractive-window .rw-controls button.rw-close {
+  background-color: #EF5350;
+  color: #ffffff;
+}
+.ractive-window .rw-controls button:hover {
+  box-shadow: 0px 0px 2px rgba(0, 120, 231, 0.7);
+}
+.ractive-window.active.resizable .rw-interior > .rw-resize-handle:hover {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.ractive-window.resizable .rw-interior > .rw-resize-handle {
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid transparent;
+  color: transparent;
+  transition: border-color 0.3s ease;
+}
+.ractive-window {
+  position: absolute;
+  padding: -1px;
+  box-sizing: border-box;
+  transition: box-shadow 0.5s ease;
+}
+.ractive-window.resizable {
+  min-width: 10em;
+  min-height: 2em;
+}
+.ractive-window > .rw-interior {
+  cursor: default;
+}
+.ractive-window.maximized {
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+}
+.ractive-window.fixed.maximized > .rw-interior .rw-buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.25em;
+}
+.ractive-window.fixed.maximized > .rw-interior {
+  margin-bottom: 3em;
+}
+.ractive-window.maximized > .rw-interior {
+  margin: 2px;
+}
+.ractive-window.fixed > .rw-interior {
+  margin: 5px;
+}
+.ractive-window.resizable > .rw-interior {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  cursor: default;
+}
+.rw-interior > .rw-title {
+  margin: 0px;
+  padding: 0px 7px;
+}
+.ractive-window.resizable > .rw-interior > .rw-title {
+  white-space: nowrap;
+}
+.ractive-window.maximized .rw-title {
+  border-radius: 0;
+  margin: -7px;
+}
+.ractive-window .rw-interior > .rw-body {
+  opacity: 0.1;
+}
+.ractive-window.active .rw-interior > .rw-body {
+  opacity: 1;
+}
+.ractive-window.fixed .rw-interior > .rw-body {
+  margin: 0.5em 0.1em 0.1em 0.1em;
+  clear: both;
+}
+.ractive-window.resizable .rw-interior > .rw-body {
+  position: absolute;
+  margin: 0px;
+  overflow: auto;
+  z-index: 1;
+}
+.ractive-window.resizable .rw-interior > .rw-dialog-cover {
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  bottom: 7px;
+  left: 7px;
+  right: 7px;
+  overflow: auto;
+  z-index: 2;
+}
+.ractive-window.resizable .rw-interior > .rw-dialog {
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  min-width: 300px;
+  padding: 10px;
+  z-index: 4;
+  min-height: 100px;
+}
+.ractive-window.resizable .rw-interior > .rw-dialog {
+  box-shadow: 0px 2px 8px -3px rgba(0, 0, 0, 0.4);
+}
+.ractive-window.resizable.with-buttons .rw-body {
+  bottom: 2.7em;
+}
+.rw-buttons > button.right {
+  float: right;
+}
+.rw-buttons > button.left {
+  float: left;
+}
+.rw-interior > .rw-buttons {
+  text-align: center;
+  padding-top: 0.1em;
+}
+.ractive-window.fixed .rw-interior > .rw-buttons::after {
+  display: block;
+  content: ' ';
+  clear: both;
+}
+.ractive-window.fixed .rw-interior > .rw-buttons {
+  padding: 0.2em;
+}
+.ractive-window.resizable .rw-interior > .rw-buttons {
+  position: absolute;
+  bottom: 0.1em;
+  left: 0.1em;
+  right: 0.1em;
+}
+.ractive-window.fixed > .rw-interior > .rw-controls {
+  top: 3px;
+}
+.rw-interior > .rw-controls {
+  position: relative;
+  float: right;
+}
+.ractive-window.fixed .rw-interior > .rw-resize-handle,
+.ractive-window.resizable.maximized .rw-interior > .rw-resize-handle {
+  display: none;
+}
+.ractive-window.resizable .rw-interior > .rw-resize-handle {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 1px;
+  height: 1px;
+  cursor: se-resize;
+  border-top: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+.ractive-window > .rw-modal {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.ractive-window .rw-controls button {
+  vertical-align: middle;
+  outline: none;
+}
+

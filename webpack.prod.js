@@ -3,6 +3,7 @@ const path = require('path');
 //const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // no support for ES6+
 const TerserPlugin = require('terser-webpack-plugin'); // support for ES6+ (succesor of uglify-es)
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	node: false,
@@ -57,7 +58,12 @@ module.exports = {
 		},
 	},
 	plugins: [
-		new MiniCssExtractPlugin({ filename: "[name].css" }) // { filename: "[name].[contentHash].css" }
+		new MiniCssExtractPlugin({ filename: "[name].css" }), // { filename: "[name].[contentHash].css" }
+		new CopyPlugin([
+			{ from: 'css/theme.less', to: 'less/theme.less' },
+			//{ from: 'css/common.less', to: 'less/common.less' },
+			{ from: 'css/theme-windows.less', to: 'less/theme-windows.less' },
+		]),
 	],
 	module: {
 		rules: [

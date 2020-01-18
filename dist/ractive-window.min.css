@@ -1,3 +1,6 @@
+.ractive-window {
+  overflow: hidden;
+}
 .ractive-window.theme-windows {
   background-color: #d4d0c8;
   box-shadow: -1px -1px 1px #92babc, 1px 1px 1px #3f8080;
@@ -8,7 +11,8 @@
   border-left: 1px solid #dee2e4;
 }
 .ractive-window.theme-windows .rw-interior > .rw-title {
-  background-color: #9e9e9e;
+  background: #9e9e9e;
+  color: #fff;
 }
 .ractive-window.theme-windows .rw-interior > .rw-title {
   margin: 1px 1px 0px 1px;
@@ -16,6 +20,9 @@
 .ractive-window.theme-windows .rw-interior > .rw-title {
   height: 28px;
   line-height: 28px;
+}
+.ractive-window.theme-windows .rw-interior > .rw-title {
+  border-bottom: 0px;
 }
 .ractive-window.theme-windows .rw-interior > .rw-controls {
   right: 1px;
@@ -46,7 +53,7 @@
   background-color: #d4d0c8;
 }
 .ractive-window.theme-windows .rw-interior > .rw-body {
-  top: 30px;
+  top: 31px;
   bottom: 1px;
   left: 1px;
   right: 1px;
@@ -70,10 +77,253 @@
   background-color: #d4d0c8;
 }
 .ractive-window.theme-windows.active .rw-interior > .rw-title {
-  background-color: #00a;
+  background: #00a;
 }
 .ractive-window.theme-windows.active .rw-interior > .rw-body {
   background-color: #d4d0c8;
+}
+.ractive-window.theme-atomlight {
+  background-color: #f2f2f2;
+  box-shadow: none;
+  border-radius: 0px;
+  border-top: 1px solid hsl(220, 1%, 86%);
+  border-right: 1px solid hsl(220, 1%, 86%);
+  border-bottom: 1px solid hsl(220, 1%, 86%);
+  border-left: 1px solid hsl(220, 1%, 86%);
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-title {
+  background: hsl(220, 1%, 86%);
+  color: hsl(220, 1%, 26%);
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-title {
+  margin: 1px 1px 0px 1px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-title {
+  height: 28px;
+  line-height: 28px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-title {
+  border-bottom: 0px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-controls {
+  right: 1px;
+  top: 1px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-controls {
+  margin: 2px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-controls button {
+  border-top: 1px solid hsl(220, 1%, 86%);
+  border-right: 1px solid hsl(220, 1%, 86%);
+  border-bottom: 1px solid hsl(220, 1%, 86%);
+  border-left: 1px solid hsl(220, 1%, 86%);
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-controls button {
+  box-shadow: none;
+  background-color: hsl(0, 0%, 100%);
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-controls button {
+  width: 24px;
+  height: 24px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-controls button {
+  margin-left: 1px;
+  padding: 4px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-body {
+  background-color: #f2f2f2;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-body {
+  top: 31px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-body {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-body {
+  color: hsl(220, 1%, 26%);
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-dialog {
+  background-color: #f2f2f2;
+}
+.ractive-window.theme-atomlight .rw-interior > .rw-dialog-cover {
+  background-color: #f2f2f2;
+}
+.ractive-window.theme-atomlight.active {
+  background-color: #f2f2f2;
+}
+.ractive-window.theme-atomlight.active .rw-interior > .rw-title {
+  background: hsl(208, 100%, 56%);
+}
+.ractive-window.theme-atomlight.active .rw-interior > .rw-body {
+  background-color: #f2f2f2;
+}
+.ractive-window.theme-atomdark {
+  background-color: #242b3a;
+  box-shadow: none;
+  border-radius: 0px;
+  border-top: 1px solid hsl(220, 24%, 12%);
+  border-right: 1px solid hsl(220, 24%, 12%);
+  border-bottom: 1px solid hsl(220, 24%, 12%);
+  border-left: 1px solid hsl(220, 24%, 12%);
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-title {
+  background: hsl(220, 24%, 12%);
+  color: hsl(220, 18%, 66%);
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-title {
+  margin: 1px 1px 0px 1px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-title {
+  height: 28px;
+  line-height: 28px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-title {
+  border-bottom: 0px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-controls {
+  right: 1px;
+  top: 1px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-controls {
+  margin: 2px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-controls button {
+  border-top: 1px solid hsl(220, 24%, 12%);
+  border-right: 1px solid hsl(220, 24%, 12%);
+  border-bottom: 1px solid hsl(220, 24%, 12%);
+  border-left: 1px solid hsl(220, 24%, 12%);
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-controls button {
+  box-shadow: none;
+  background-color: hsl(220, 24%, 26%);
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-controls button {
+  width: 24px;
+  height: 24px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-controls button {
+  margin-left: 1px;
+  padding: 4px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-body {
+  background-color: #242b3a;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-body {
+  top: 31px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-body {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-body {
+  color: hsl(220, 18%, 66%);
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-dialog {
+  background-color: #242b3a;
+}
+.ractive-window.theme-atomdark .rw-interior > .rw-dialog-cover {
+  background-color: #242b3a;
+}
+.ractive-window.theme-atomdark.active {
+  background-color: #242b3a;
+}
+.ractive-window.theme-atomdark.active .rw-interior > .rw-title {
+  background: hsl(208, 88%, 48%);
+}
+.ractive-window.theme-atomdark.active .rw-interior > .rw-body {
+  background-color: #242b3a;
+}
+.ractive-window.theme-aws {
+  background-color: #fff;
+  box-shadow: none;
+  border-radius: 5px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.ractive-window.theme-aws .rw-interior > .rw-title {
+  background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0);
+  color: #000;
+}
+.ractive-window.theme-aws .rw-interior > .rw-title {
+  margin: 0px 0px 0px 0px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-title {
+  height: 55px;
+  line-height: 55px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-title {
+  border-bottom: 1px solid #cccccc;
+}
+.ractive-window.theme-aws .rw-interior > .rw-controls {
+  right: 0px;
+  top: 0px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-controls {
+  margin: 15px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-controls button {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-controls button {
+  box-shadow: none;
+  background-color: transparent;
+}
+.ractive-window.theme-aws .rw-interior > .rw-controls button {
+  width: 24px;
+  height: 24px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-controls button {
+  margin-left: 1px;
+  padding: 4px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-body {
+  background-color: #fff;
+}
+.ractive-window.theme-aws .rw-interior > .rw-body {
+  top: 56px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-body {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.ractive-window.theme-aws .rw-interior > .rw-body {
+  color: #666;
+}
+.ractive-window.theme-aws .rw-interior > .rw-dialog {
+  background-color: #fff;
+}
+.ractive-window.theme-aws .rw-interior > .rw-dialog-cover {
+  background-color: #d4d0c8;
+}
+.ractive-window.theme-aws.active {
+  background-color: #fff;
+}
+.ractive-window.theme-aws.active .rw-interior > .rw-title {
+  background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0);
+}
+.ractive-window.theme-aws.active .rw-interior > .rw-body {
+  background-color: #fff;
 }
 .rw-interior > .rw-title {
   color: #fff;

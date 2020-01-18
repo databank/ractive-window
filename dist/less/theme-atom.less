@@ -1,0 +1,43 @@
+.ractive-window.theme-atom {
+	& {
+		@databank-ractive-window-background: @overlay-background-color;
+		@databank-ractive-window-border-top: 1px solid @overlay-border-color;
+		@databank-ractive-window-border-right: 1px solid @overlay-border-color;
+		@databank-ractive-window-border-bottom: 1px solid @overlay-border-color;
+		@databank-ractive-window-border-left: 1px solid @overlay-border-color;
+		@databank-ractive-window-box-shadow: none;
+		@databank-ractive-window-border-radius: 0px;
+		@databank-ractive-window-spacing: 1px;
+
+		@databank-ractive-window-title-background: @overlay-border-color;
+		@databank-ractive-window-title-color: @text-color;
+		@databank-ractive-window-title-height: 28px;
+		@databank-ractive-window-title-border-bottom: 0px;
+
+		@databank-ractive-window-button-background-color: @button-background-color;
+		@databank-ractive-window-button-border-top: 1px solid @button-border-color;
+		@databank-ractive-window-button-border-right: 1px solid @button-border-color;
+		@databank-ractive-window-button-border-bottom: 1px solid @button-border-color;
+		@databank-ractive-window-button-border-left: 1px solid @button-border-color;
+		@databank-ractive-window-button-box-shadow: none;
+		@databank-ractive-window-button-border-radius: 0px;
+		@databank-ractive-window-button-size: 24px;
+		@databank-ractive-window-button-spacing: 1px;
+		@databank-ractive-window-button-margin: 2px;
+		@databank-ractive-window-button-padding: 4px;
+
+		@databank-ractive-window-body-background: @overlay-background-color;
+		@databank-ractive-window-body-color: @text-color;
+		@databank-ractive-window-body-border-top: 0px;
+		@databank-ractive-window-body-border-right: 0px;
+		@databank-ractive-window-body-border-bottom: 0px;
+		@databank-ractive-window-body-border-left: 0px;
+		@databank-ractive-window-body-cover-background: @overlay-background-color;
+
+		@databank-ractive-window-active-background: @overlay-background-color;
+		@databank-ractive-window-active-title-background: @background-color-info;
+		@databank-ractive-window-active-body-background: @overlay-background-color;
+
+		@import (multiple,reference) "./theme.less";
+	}
+}

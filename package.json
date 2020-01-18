@@ -1,6 +1,6 @@
 {
 	"name": "@databank/ractive-window",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "ractivejs multi window/dialog component",
 	"main": "dist/ractive-window.min.js",
 	"scripts": {

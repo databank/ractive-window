@@ -4,9 +4,11 @@
 
 
 
-&	.rw-interior > .rw-title {background-color: @databank-ractive-window-title-background; }
+&	.rw-interior > .rw-title {background: @databank-ractive-window-title-background; color: @databank-ractive-window-title-color;}
 &	.rw-interior > .rw-title {margin: @databank-ractive-window-spacing @databank-ractive-window-spacing 0px @databank-ractive-window-spacing;}
 &	.rw-interior > .rw-title {height: @databank-ractive-window-title-height;line-height: @databank-ractive-window-title-height;}
+&	.rw-interior > .rw-title {border-bottom: @databank-ractive-window-title-border-bottom;}
+
 
 &	.rw-interior > .rw-controls {right: @databank-ractive-window-spacing;top: @databank-ractive-window-spacing;}
 &	.rw-interior > .rw-controls { margin: @databank-ractive-window-button-margin; }
@@ -18,7 +20,7 @@
 
 
 & .rw-interior > .rw-body {background-color: @databank-ractive-window-body-background;}
-& .rw-interior > .rw-body {top: @databank-ractive-window-spacing + @databank-ractive-window-title-height + @databank-ractive-window-spacing;bottom: @databank-ractive-window-spacing;left: @databank-ractive-window-spacing;right: @databank-ractive-window-spacing;}
+& .rw-interior > .rw-body {top: @databank-ractive-window-spacing + @databank-ractive-window-title-height + @databank-ractive-window-spacing + 1px;bottom: @databank-ractive-window-spacing;left: @databank-ractive-window-spacing;right: @databank-ractive-window-spacing;}
 & .rw-interior > .rw-body {border-top: @databank-ractive-window-body-border-top;border-right: @databank-ractive-window-body-border-right;border-bottom: @databank-ractive-window-body-border-bottom;border-left: @databank-ractive-window-body-border-left;}
 & .rw-interior > .rw-body {color: @databank-ractive-window-body-color}
 & .rw-interior > .rw-dialog {background-color: @databank-ractive-window-body-background;}
@@ -26,5 +28,5 @@
 
 
 &.active {background-color: @databank-ractive-window-active-background;}
-&.active	.rw-interior > .rw-title {background-color: @databank-ractive-window-active-title-background; }
+&.active	.rw-interior > .rw-title {background: @databank-ractive-window-active-title-background; }
 &.active .rw-interior > .rw-body {background-color: @databank-ractive-window-active-body-background;}

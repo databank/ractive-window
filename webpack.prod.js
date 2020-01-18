@@ -63,6 +63,7 @@ module.exports = {
 			{ from: 'css/theme.less', to: 'less/theme.less' },
 			//{ from: 'css/common.less', to: 'less/common.less' },
 			{ from: 'css/theme-windows.less', to: 'less/theme-windows.less' },
+			{ from: 'css/theme-atom.less', to: 'less/theme-atom.less' },
 		]),
 	],
 	module: {

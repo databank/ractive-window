@@ -34,7 +34,7 @@ module.exports = {
 	},
 
 	entry: {
-		'ractive-window': path.resolve(__dirname, './src/index.js'),
+		//'ractive-window': path.resolve(__dirname, './src/index.js'),
 		'ractive-window.min': path.resolve(__dirname, './src/index.js')
 	},
 	output: {
@@ -65,11 +65,6 @@ module.exports = {
 				test: /\.less$/,
 				use: [
 					MiniCssExtractPlugin.loader, // extract css into files
-
-					// {
-					// 	loader: 'style-loader', // creates style nodes from JS strings
-					// },
-
 					{
 						loader: 'css-loader', // translates CSS into CommonJS
 					},

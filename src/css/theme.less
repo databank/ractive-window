@@ -1,2 +1,13 @@
 
-& {background-color: @databank-ractive-window-background;}
+& {background-color: @databank-ractive-window-background;box-shadow: @databank-ractive-window-box-shadow;border-radius: @databank-ractive-window-border-radius;}
+& {border-top: @databank-ractive-window-border-top;border-right: @databank-ractive-window-border-right;border-bottom: @databank-ractive-window-border-bottom;border-left: @databank-ractive-window-border-left;}
+
+
+
+&	.rw-interior > .rw-title {background-color: @databank-ractive-window-title-background; }
+&	.rw-interior > .rw-title {margin: @databank-ractive-window-spacing @databank-ractive-window-spacing 0px @databank-ractive-window-spacing;}
+&	.rw-interior > .rw-title {height: @databank-ractive-window-title-height;line-height: @databank-ractive-window-title-height;}
+
+& .rw-interior > .rw-body {top: @databank-ractive-window-spacing + @databank-ractive-window-title-height + @databank-ractive-window-spacing;bottom: @databank-ractive-window-spacing;left: @databank-ractive-window-spacing;right: @databank-ractive-window-spacing;}
+
+&.active {background-color: @databank-ractive-window-active-background;}
